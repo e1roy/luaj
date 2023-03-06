@@ -352,7 +352,7 @@ public class StringTest extends TestCase {
 	
 	public void testMatchShortPatterns() {
 		LuaValue[] args = { LuaString.valueOf("%bxy") };
-		LuaString _ = LuaString.valueOf("");
+		LuaString _1 = LuaString.valueOf("");
 
 		LuaString a = LuaString.valueOf("a");
 		LuaString ax = LuaString.valueOf("ax");
@@ -364,7 +364,7 @@ public class StringTest extends TestCase {
 		LuaString axbya = LuaString.valueOf("axbya");
 		LuaValue nil = LuaValue.NIL;
 		
-		assertEquals(nil, _.invokemethod("match", args));
+		assertEquals(nil, _1.invokemethod("match", args));
 		assertEquals(nil, a.invokemethod("match", args));
 		assertEquals(nil, ax.invokemethod("match", args));
 		assertEquals(nil, axb.invokemethod("match", args));
