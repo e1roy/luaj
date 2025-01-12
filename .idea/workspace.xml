@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c8ea8f0-f9a9-4441-93eb-328e820fcb34" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/jme/SampleMIDlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme/org/luaj/vm2/lib/jme/JmeIoLib.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jme/org/luaj/vm2/lib/jme/JmePlatform.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/junit/org/luaj/vm2/MathLibTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/junit/org/luaj/vm2/MathLibTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/junit/org/luaj/vm2/ScriptDrivenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/junit/org/luaj/vm2/ScriptDrivenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/junit/org/luaj/vm2/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/junit/org/luaj/vm2/StringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/junit/org/luaj/vm2/lib/jse/OsLibTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/junit/org/luaj/vm2/lib/jse/OsLibTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luaj-vm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/luaj-vm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/org/luaj/vm2/lib/CoroutineLib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/org/luaj/vm2/lib/CoroutineLib.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/org/luaj/luajc/TestLuaJ.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/org/luaj/luajc/TestLuaJ.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2Md52ipzu8o52VLhVo1mxsTvbbn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,10 +40,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.SampleParser.executor": "Run",
+    "Application.TestLuaJ.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/open/luaj/lib",
+    "dart.analysis.tool.window.visible": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/elroysu/Desktop/projects/luaj/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,10 +58,28 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/.idea/lib" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestLuaJ">
+    <configuration name="SampleParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SampleParser" />
+      <module name="luaj-vm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestLuaJ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.luaj.luajc.TestLuaJ" />
       <module name="luaj-vm" />
@@ -70,8 +96,16 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestLuaJ" />
+        <item itemvalue="Application.SampleParser" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,10 +116,24 @@
       <option name="presentableId" value="Default" />
       <updated>1678084414025</updated>
       <workItem from="1678084415159" duration="1819000" />
+      <workItem from="1736701456736" duration="45000" />
+      <workItem from="1736701507464" duration="79000" />
+      <workItem from="1736701592413" duration="1531000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

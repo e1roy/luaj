@@ -10,7 +10,7 @@
  *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -21,6 +21,7 @@
  ******************************************************************************/
 package org.luaj.luajc;
 
+import org.intellij.lang.annotations.Language;
 import org.luaj.vm2.Globals;
 import org.luaj.vm2.LuaValue;
 import org.luaj.vm2.Print;
@@ -31,27 +32,32 @@ import org.luaj.vm2.lib.jse.JsePlatform;
 public class TestLuaJ {
 	// create the script
 	public static String name = "script";
-	public static String script =
-		"function r(q,...)\n"+
-		"	local a=arg\n"+
-		"	return a and a[2]\n"+
-		"end\n" +
-		"function s(q,...)\n"+
-		"	local a=arg\n"+
-		"	local b=...\n"+
-		"	return a and a[2],b\n"+
-		"end\n" +
-		"print( r(111,222,333),s(111,222,333) )";
-		
+
+    @Language("lua") public static String script =
+    """
+		function r(q,...)
+			local a=arg
+			return a and a[2]
+		end
+		function s(q,...)
+			local a=arg
+			local b=...
+			return a and a[2],b
+		end
+		print( r(111,222,333),s(111,222,333) )
+    """;
+
+
+
 	public static void main(String[] args) throws Exception {
 		System.out.println(script);
-		
+
 		// create an environment to run in
 		Globals globals = JsePlatform.standardGlobals();
-		
+
 		// compile into a chunk, or load as a class
 		LuaValue chunk = globals.load(script, "script");
-		
+
 		// The loaded chunk should be a closure, which contains the prototype.
 		print( chunk.checkclosure().p );
 
@@ -66,5 +72,5 @@ public class TestLuaJ {
 			for ( int i=0,n=p.p.length; i<n; i++ )
 				print( p.p[i] );
 	}
-		
+
 }
